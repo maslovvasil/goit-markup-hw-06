@@ -383,8 +383,8 @@
             </div>
             <form class="subscribe">
               <div class="subscribe-div">
-                <label class="subscribe-title">Подпишитесь на рассылку</label>
-                <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                <label for="subscribe-email" class="subscribe-title">Подпишитесь на рассылку</label>
+                <input id="subscribe-email" class="subscribe-input" type="email" name="email" placeholder="E-mail">
               </div>
             <button type="submit" class="subscribe-submit">Подписаться
               <svg class="icon-send" width="24" height="24">
@@ -410,22 +410,22 @@
             <form for="#" class="form-container" >
               <p class="form-header-title">Оставьте свои данные, мы вам перезвоним</p>
               <div class="form-sector">
-                  <label class="form-label">Имя</label>
-                  <input class="form-input" type="text" name="username" required>
+                  <label for="name" class="form-label">Имя</label>
+                  <input id="name" class="form-input" type="text" name="username" required>
                   <svg class="form-icon" width="18" height="18">
                       <use href="./images/symbol-defs1.svg#icon-person"></use>
                   </svg>
               </div>
               <div class="form-sector">
-                  <label class="form-label">Телефон</label>
-                  <input class="form-input" type="text" name="username" required>
+                  <label for="phone" class="form-label">Телефон</label>
+                  <input id="phone" class="form-input" type="text" name="userphone" required>
                   <svg class="form-icon" width="18" height="18">
                       <use href="./images/symbol-defs1.svg#icon-phone"></use>
                   </svg>
               </div>
               <div class="form-sector">
-                <label class="form-label">Почта</label>
-                <input class="form-input" type="text" name="username" required>
+                <label for="email" class="form-label">Почта</label>
+                <input id="email" class="form-input" type="text" name="usermail" required>
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs1.svg#icon-email"></use>
                 </svg>
@@ -440,8 +440,8 @@
                   </svg>
               </label>-->
               <div class="form-sector">
-                <label class="form-label">Комментарий</label>
-                <textarea name="text" class="form-message" placeholder="Введите текст"></textarea>
+                <label for="message" class="form-label">Комментарий</label>
+                <textarea id="message" name="text" class="form-message" placeholder="Введите текст"></textarea>
               </div>
 <!--           
               <div class="form-checkbox">
@@ -450,13 +450,15 @@
             </div>
 -->
               <div class="form-checkbox">
-                <input type="checkbox" name="checkbox" class="checkbox">
-                <svg class="checkbox-icon" width="16" height="15">
-                  <use href="./images/symbol-defs1.svg#icon-check"></use>
-                </svg>
+
               
                 <label class="checkbox-terms">Соглашаюсь с рассылкой и принимаю <span class="terms-link">Условия
-                    договора</span></label>
+                    договора</span>
+                                  <input type="checkbox" name="checkbox" class="checkbox">
+                                  <svg class="checkbox-icon" width="16" height="15">
+                                    <use href="./images/symbol-defs1.svg#icon-check"></use>
+                                  </svg>
+                  </label>
               </div>
             <button type="submit" class="sbm"> <span class="sbm-title">Отправить</span></button>
             </form>
